@@ -1,0 +1,15 @@
+<div>
+    <header>
+        <h2>Artist result</h2>
+    </header>
+    <main>
+        {{#each artistArray}}
+        <img src="{{this.images.0.url}}" alt="">
+        <h1>{{this.name}}</h1>
+        <h2>{{this.image}}</h2>
+        <h3>{{this.link}}</h3>
+        <a href="/albums/{{this.id}}"> View Albums</a>
+        {{/each}}
+    </main>
+
+</div>
